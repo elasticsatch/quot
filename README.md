@@ -65,7 +65,7 @@ Download the latest release for your platform from [GitHub Releases](https://git
 
 ```bash
 # Detect platform and download latest release
-curl -s https://api.github.com/repos/blueeaglesam/quot/releases/latest \
+curl -s https://api.github.com/repos/elasticsatch/quot/releases/latest \
   | grep browser_download_url \
   | grep $(uname -s | tr '[:upper:]' '[:lower:]') \
   | cut -d '"' -f 4 \
@@ -75,7 +75,7 @@ curl -s https://api.github.com/repos/blueeaglesam/quot/releases/latest \
 ### From Source
 
 ```bash
-git clone https://github.com/blueeaglesam/quot
+git clone https://github.com/elasticsatch/quot
 cd quot
 cargo build --release
 ```
